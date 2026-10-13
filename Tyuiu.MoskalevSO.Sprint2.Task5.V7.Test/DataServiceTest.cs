@@ -7,13 +7,13 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Test
     public class DataServiceTest
     {
         [TestMethod]
-        public void ValidGetMonthName()
+        public void ValidFindMonthName()
         {
             DataService ds = new DataService();
             int n = 14;
-            string res = ds.FindMonthName(n);
+            int days = 2;
+            string res = ds.FindMonthName(n, days);
             string wait = "март";
-
             Assert.AreEqual(wait, res);
         }
     }
