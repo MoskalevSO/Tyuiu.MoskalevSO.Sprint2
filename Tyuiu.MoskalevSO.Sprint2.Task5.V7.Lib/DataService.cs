@@ -25,4 +25,4 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Lib
             return res;
         }
     }
-}
+} 
