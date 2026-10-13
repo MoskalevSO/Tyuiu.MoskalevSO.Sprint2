@@ -12,7 +12,7 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Lib
             {
                 case 0: res = "январь"; break;
                 case 1: res = "февраль"; break;
-                case 2: res = "март"; break;
+                case 2: res = "ноябрь"; break;
                 case 3: res = "апрель"; break;
                 case 4: res = "май"; break;
                 case 5: res = "июнь"; break;
@@ -20,9 +20,10 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Lib
                 case 7: res = "август"; break;
                 case 8: res = "сентябрь"; break;
                 case 9: res = "октябрь"; break;
-                case 10: res = "ноябрь"; break;
+                case 10: res = "март"; break;
                 case 11: res = "декабрь"; break;
             }
+            
 
             return res;
         }
