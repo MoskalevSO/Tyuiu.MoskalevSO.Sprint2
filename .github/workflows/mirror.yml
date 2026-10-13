@@ -1,0 +1,20 @@
+name: Mirror to GitVerse
+
+on:
+  push:
+    branches: [ "main", "master" ] # Укажите главную ветку (обычно main или master)
+
+jobs:
+  to_gitverse:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Push to GitVerse
+        uses: pixta-dev/repository-mirroring-action@v1
+        with:
+          target_repo_url: https://gitverse.ru/MoskalevSO/Tyuiu.MoskalevSO.Sprint2.git
+          ssh_private_key: ${{ secrets.GITVERSE_TOKEN }} # Несмотря на название ключа в экшене, сюда передается токен или пароль, либо используем альтернативный вариант ниже 👇
