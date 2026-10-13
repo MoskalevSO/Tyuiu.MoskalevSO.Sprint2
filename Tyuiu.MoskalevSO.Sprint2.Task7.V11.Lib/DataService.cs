@@ -6,7 +6,7 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task7.V11.Lib
     {
         public bool CheckDotInShadedArea(double x, double y)
         {
-            bool res = (x * x + y * y <= 1) && (y <= x);
+            bool res = (x * x + y * y <= 1) && (y >= x);
             return res;
         }
     }
