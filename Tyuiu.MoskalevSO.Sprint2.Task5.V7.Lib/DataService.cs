@@ -7,7 +7,7 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Lib
         public string FindMonthName(int n, int days)
         {
             string res = "";
-            switch (n % 12)
+            switch ((n - 1990 + 2) % 12)
             {
                 case 0: res = "январь"; break;
                 case 1: res = "февраль"; break;

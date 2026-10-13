@@ -2,7 +2,7 @@
 
 DataService ds = new DataService();
 
-Console.Write("Введите количество месяцев n: ");
+Console.Write("Введите год n: ");
 int n = Convert.ToInt32(Console.ReadLine());
 int days = 2;
 

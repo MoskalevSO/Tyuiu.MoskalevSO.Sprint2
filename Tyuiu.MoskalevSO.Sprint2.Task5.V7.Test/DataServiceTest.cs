@@ -10,7 +10,7 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task5.V7.Test
         public void ValidFindMonthName()
         {
             DataService ds = new DataService();
-            int n = 14;
+            int n = 1990;
             int days = 2;
             string res = ds.FindMonthName(n, days);
             string wait = "март";
