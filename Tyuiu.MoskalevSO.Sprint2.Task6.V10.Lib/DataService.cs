@@ -16,17 +16,17 @@ namespace Tyuiu.MoskalevSO.Sprint2.Task6.V10.Lib
             }
             else
             {
-                // Используем сокращенную форму записи switch (switch expression)
                 (prevG, prevM, prevN) = m switch
                 {
                     1 => (g - 1, 12, 31),
-                    3 => (g, 2, 28), // Год невисокосный
+                    3 => (g, 2, 28),
                     5 or 7 or 8 or 10 or 12 => (g, m - 1, 30),
                     _ => (g, m - 1, 31)
                 };
             }
 
-            return $"{prevN}.{prevM}.{prevG}";
+            // Добавили формат :D2, чтобы получить ведущие нули (например, 07.09.2023)
+            return $"{prevN:D2}.{prevM:D2}.{prevG}";
         }
     }
 }
